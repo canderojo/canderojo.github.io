@@ -428,3 +428,31 @@ footer {
 .temas {
   border-radius: 20px;
 }
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .vids, .img {
+    width: 100%;
+    height: auto;
+  }
+
+  .im {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .textos {
+    margin: 0 auto 20px auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
