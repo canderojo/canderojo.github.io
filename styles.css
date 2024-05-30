@@ -42,8 +42,6 @@ body {
   background-color: #333;
   height: 220vh;
   width: 210vh;
-  overflow-x: hidden;
-  /* que no se mueva al costado */
 }
 
 /*velocidad del choque*/
@@ -261,21 +259,12 @@ html {
   align-items: center;
 }
 
-h5 {
-  font-family: Montserrat;
-  color: #f80f0f;
-  font-size: 130%;
-}
-
 .artista {
   display: flex;
   justify-content: center;
 }
 
-.art1,
-.art2,
-.art3,
-.art4 {
+.art1, .art2, .art3, .art4 {
   width: 240px;
   height: 210px;
   margin: 0 10px;
@@ -477,15 +466,23 @@ footer {
 }
 
 /* Estilos para pantallas pequeñas (celulares) */
-@media (max-width: 767px) {
+@media (max-width: 700px) {
   body {
     width: 100%;
     height: auto;
   }
 
-  .vids {
+  .vids iframe{
     width: 100%;
     height: auto;
+    display: block;
+  }
+
+  .item p iframe{
+    width: 100%;
+    height: 100px;
+    display: block;
+    margin-top: 10px;
   }
 
   .im {
@@ -579,44 +576,10 @@ footer {
   }
 }
 
-/* Estilos para pantallas grandes (monitores de escritorio) */
+
+/* Estilos para pantallas grandes*/
 @media (min-width: 1200px) {
-  body {
-    width: 100%;
-    height: 220vh;
-  }
-
-  .vids {
-    width: 420px;
-    height: 46.4px;
-  }
-
-  .im {
-    margin-left: 100px;
-  }
-
-  .img {
-    width: 450px;
-    height: 280px;
-  }
-
-  .art1, .art2, .art3, .art4 {
-    width: 240px;
-    height: 210px;
-  }
-
-  .caja {
-    width: 90%;
-    height: 80%;
-  }
-
-  .tablaMetodos {
-    width: 33.3%;
-    height: 80%;
-  }
-
-  .formulario {
-    left: 40%;
-    width: 300px;
+  body{
+    overflow-x: hidden; /* que no se mueva al costado */
   }
 }
