@@ -1,9 +1,5 @@
 /*GENERAL*/
-h1,
-h2,
-h4,
-p,
-ul {
+h1, h2, h4, p, ul {
   font-family: Montserrat;
   color: white;
 }
@@ -23,6 +19,7 @@ h5 {
   font-family: Montserrat;
   color: #f80f0f;
   font-size: 130%;
+  padding: 5px;
 }
 
 .imagenCassette {
@@ -84,6 +81,12 @@ head {
   top: 20%;
   left: 40%;
   z-index: 1;
+}
+
+.centrado {
+  color: rgb(249, 246, 246);
+  text-align: center;
+  text-transform: uppercase;
 }
 
 #textSignInUp {
@@ -202,26 +205,33 @@ head {
   width: 50px;
   height: auto;
   margin-right: 10px;
-  transition: transform 0.5s ease;
-  /* Añade una transición suave al giro del logo */
+  transition: transform 0.5s ease; /* Añade una transición suave al giro del logo */
 }
 
 .logo:hover {
-  transform: rotate(360deg);
-  /* Gira el logo 360 grados cuando se pasa el mouse sobre él */
+  transform: rotate(360deg); /* Gira el logo 360 grados cuando se pasa el mouse sobre él */
 }
 
 /*INDEX*/
-.vids {
-  width: 420px;
-  height: 46.4px;
-  scroll-margin-top: 75px;
-  margin-top: 20px;
+#tabla {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-#tabla {
-  position: auto;
-  margin-top: 20px;
+#tabla tr {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+#tabla td {
+  box-sizing: border-box;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -338,6 +348,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-margin-top: 75px;
 }
 
 section {
@@ -378,10 +389,8 @@ footer {
   margin-top: 80px;
   height: 200px;
   flex-direction: column;
-  justify-content: center;
-  /* Centra horizontalmente el contenido */
-  align-items: center;
-  /* Centra verticalmente el contenido */
+  justify-content: center; /* Centra horizontalmente el contenido */
+  align-items: center; /* Centra verticalmente el contenido */
 }
 
 #contacto {
@@ -409,16 +418,9 @@ footer {
   text-align: left;
 }
 
-.centrado {
-  color: rgb(249, 246, 246);
-  text-align: center;
-  text-transform: uppercase;
-}
-
 .temas {
   border-radius: 20px;
 }
-
 
 /* Responsive para celulares */
 @media (max-width: 699px) {
@@ -511,7 +513,6 @@ footer {
     width: 100%;
     display: block;
     margin-bottom: 20px;
-    margin-left: 2px;
   }
   
   .caja {
@@ -603,6 +604,10 @@ footer {
 
   #dropdownMenu:hover ul {
     display: flex;
+  }
+
+  table#tabla td {
+    margin: 10px;
   }
 
   .im {
