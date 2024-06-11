@@ -1,5 +1,9 @@
-/*GENERAL*/
-h1, h2, h4, p, ul {
+/*General*/
+h1,
+h2,
+h4,
+p,
+ul {
   font-family: Montserrat;
   color: white;
 }
@@ -32,10 +36,11 @@ body {
   background-color: #333;
   height: 220vh;
   width: 210vh;
-  overflow-x: hidden; /* que no se mueva al costado */
+  overflow-x: hidden;
+  /* Que no se mueva al costado */
 }
 
-/*velocidad del choque*/
+/*Velocidad del choque*/
 marquee {
   height: 90vh;
 }
@@ -156,7 +161,7 @@ head {
   border: transparent;
 }
 
-/*MENU*/
+/*Menu*/
 #dropdownMenu {
   position: fixed;
   top: 0;
@@ -194,19 +199,21 @@ head {
   background-color: #9b2020;
 }
 
-/*LOGO ANIMACION*/
+/*Logo animacion*/
 .logo {
   width: 50px;
   height: auto;
   margin-right: 10px;
-  transition: transform 0.5s ease; /* Añade una transición suave al giro del logo */
+  transition: transform 0.5s ease;
+  /* Añade una transición suave al giro del logo */
 }
 
 .logo:hover {
-  transform: rotate(360deg); /* Gira el logo 360 grados cuando se pasa el mouse sobre él */
+  transform: rotate(360deg);
+  /* Gira el logo 360 grados cuando se pasa el mouse sobre él */
 }
 
-/*INDEX*/
+/*Index*/
 #tabla {
   width: 100%;
   display: flex;
@@ -229,7 +236,7 @@ head {
   align-items: center;
 }
 
-/*SECCIONES*/
+/*Secciones*/
 html {
   scroll-behavior: smooth;
 }
@@ -268,7 +275,10 @@ html {
   justify-content: center;
 }
 
-.art1, .art2, .art3, .art4 {
+.art1,
+.art2,
+.art3,
+.art4 {
   width: 240px;
   height: 210px;
   margin: 0 10px;
@@ -337,7 +347,7 @@ html {
   margin-top: 5px;
 }
 
-/*BOTONES DESPLEGABLES*/
+/*Botones desplegables*/
 * {
   margin: 0;
   padding: 0;
@@ -373,7 +383,7 @@ p {
   font-size: medium;
 }
 
-/*FOOTER*/
+/*Footer*/
 footer {
   background: #ba090f;
   border-radius: 20px;
@@ -383,8 +393,10 @@ footer {
   margin-top: 80px;
   height: 200px;
   flex-direction: column;
-  justify-content: center; /* Centra horizontalmente el contenido */
-  align-items: center; /* Centra verticalmente el contenido */
+  justify-content: center;
+  /* Centra horizontalmente el contenido */
+  align-items: center;
+  /* Centra verticalmente el contenido */
 }
 
 #contacto {
@@ -463,19 +475,20 @@ canvas {
     align-items: center;
     text-align: center;
   }
-  
+
   table#tabla tr {
     display: block;
     margin-bottom: 20px;
   }
-  
+
   table#tabla td {
     display: block;
     width: 100%;
-    clear: both; /* Asegura que los videos se coloquen uno debajo del otro */
+    clear: both;
+    /* Asegura que los videos se coloquen uno debajo del otro */
   }
 
-  .item p iframe{
+  .item p iframe {
     width: 100%;
     height: 100px;
     display: block;
@@ -503,33 +516,36 @@ canvas {
     justify-content: center;
   }
 
-  .art1, .art2, .art3, .art4 {
+  .art1,
+  .art2,
+  .art3,
+  .art4 {
     width: 45%;
     height: auto;
     margin: 10px;
   }
- 
+
   .tablaMetodos {
     width: 100%;
     display: block;
     margin-bottom: 20px;
   }
-  
+
   .caja {
     width: 100%;
     margin: 0;
     margin-bottom: 20px;
   }
-  
+
   .metodo-pago {
     width: 100%;
     height: auto;
   }
-  
+
   .ulMetodos {
     height: auto;
   }
-  
+
   .boton-registro {
     width: 100%;
     text-align: center;
@@ -543,20 +559,17 @@ canvas {
     transform: translate(-50%, -50%);
     padding: 20px;
   }
-  
+
   #textSignInUp {
-      position: absolute;
-      top: -10%;
-      left: 15%;
-      color: white;
-      font-size: 25px;
+    position: absolute;
     }
-  }
+}
 
 /* Responsive para pantallas grandes*/
 @media (min-width: 1150px) {
-  body{
-    overflow-x: hidden; /* que no se mueva al costado */
+  body {
+    overflow-x: hidden;
+    /* que no se mueva al costado */
   }
 
   #dropdownMenu .menu-title {
@@ -564,16 +577,13 @@ canvas {
   }
 
   .centrado {
-    color: rgb(249, 246, 246);
-    text-align: center;
-    text-transform: uppercase;
     margin-left: 80px;
   }
 
 }
 
 /* Responsive para tablets */
-@media (min-width: 700px) and (max-width: 1149px){
+@media (min-width: 700px) and (max-width: 1149px) {
   body {
     width: 100%;
     height: auto;
@@ -626,7 +636,10 @@ canvas {
     justify-content: center;
   }
 
-  .art1, .art2, .art3, .art4 {
+  .art1,
+  .art2,
+  .art3,
+  .art4 {
     width: 150px;
     height: 150px;
     margin: 0 10px;
@@ -638,29 +651,36 @@ canvas {
     display: block;
     margin-bottom: 20px;
   }
-  
+
   .caja {
     width: 90%;
     margin: 5% auto;
     margin-bottom: 20px;
   }
-  
+
   .metodo-pago {
     width: 90%;
     height: auto;
     margin: 0 auto;
   }
-  
+
   .ulMetodos {
     height: auto;
   }
-  
+
   .boton-registro {
     width: 100%;
     text-align: center;
   }
 
-  .centrado {
-    margin-left: 90px;
+  .formulario {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
   }
+
+  #textSignInUp {
+    position: absolute;
   }
+}
