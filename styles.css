@@ -28,17 +28,11 @@ h5 {
   border-radius: 10%;
 }
 
-/*ANIMACION*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   background-color: #333;
   height: 220vh;
   width: 210vh;
+  overflow-x: hidden; /* que no se mueva al costado */
 }
 
 /*velocidad del choque*/
@@ -422,6 +416,12 @@ footer {
   border-radius: 20px;
 }
 
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 /* Responsive para celulares */
 @media (max-width: 699px) {
   body {
@@ -543,6 +543,7 @@ footer {
     transform: translate(-50%, -50%);
     padding: 20px;
   }
+  
   #textSignInUp {
       position: absolute;
       top: -10%;
@@ -562,13 +563,12 @@ footer {
     display: none;
   }
 
-  
-.centrado {
-  color: rgb(249, 246, 246);
-  text-align: center;
-  text-transform: uppercase;
-  margin-left: 80px;
-}
+  .centrado {
+    color: rgb(249, 246, 246);
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 80px;
+  }
 
 }
 
@@ -659,5 +659,8 @@ footer {
     width: 100%;
     text-align: center;
   }
+
+  .centrado {
+    margin-left: 90px;
   }
-  
+  }

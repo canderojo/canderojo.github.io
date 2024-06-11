@@ -9,16 +9,15 @@
     <link rel="stylesheet" href="styles.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script>
     <h1 class="centrado">Cassette</h1>
 </head>
 
 <body>
 
     <!--caja para iniciar sesion o registrarse-->
-    <form class="formulario" action="index.html">
+    <form class="formulario" onsubmit="verifySignInValues(event)">
 
         <h2 id="textSignInUp"><a href="signIn.html">Sign In</a> | <a href="signUp.html">Sign Up</a></h2>
         <ul>
@@ -28,17 +27,16 @@
             <input id="password" class="boxes" type="password" required name="Contraseña" placeholder="Password">
             <h4 id="rememberMe">Remember Me</h4>
             <input id="boxRememberMe" class="boxes" type="checkbox">
-            <input id="submit" class="boxes" type="submit" value="SIGN IN">
+            <button class="boxes" id="submit">Sign In</button>
 
         </ul>
     </form>
-    <!--animacion-->
-    <marquee behavior="alternate" scrollamount="30">
-        <marquee behavior="alternate" scrollamount="30" direction="down">
-            <img src="imagenes/logonuevo2.png">
-        </marquee>
-    </marquee>
 
+    <!-- Elemento canvas para la animación -->
+    <canvas id="animationCanvas"></canvas>
+
+    <!-- Script para la animación de rebote -->
+    <script src="animation.js"></script>
 
 </body>
 
